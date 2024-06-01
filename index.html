@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Electrodomesticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Venta de Electrodomesticos</h1>
+        <h2>Ingrese productos a la lista, si desea borrar presione el boton rojo</h2>
+    </header>
+    <main>
+        
+        <div class="card">
+            <section id="product-list">
+                <h2>Lista de Productos</h2>
+                <ul>
+                    <li class="product-item">Refrigerador</li>
+                    <li class="product-item">Lavadora</li>
+                    <li class="product-item">Microondas</li>
+                </ul>
+            </section>
+            <section id="add-product">
+                <h2>Agregar Nuevo Producto</h2>
+                <form id="product-form">
+                    <label for="product-name">Nombre del producto:</label>
+                    <input type="text" id="product-name" name="product-name" required>
+                    <button type="submit">Agregar Producto</button>
+                </form>
+            </section>
+            <section id="clear">
+                <button id="clear-products" class="btn-red">Eliminar Lista de Productos</button>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
